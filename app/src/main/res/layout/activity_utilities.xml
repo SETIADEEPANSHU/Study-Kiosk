@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.htc.everymode.MainActivity"
+    android:background="#bb3ba3"
+    android:contextClickable="true">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:id="@+id/calc"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#15e720"
+        android:textColorHighlight="#3b9f7f"
+        android:textStyle="bold|italic"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:id="@+id/call"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/calc"
+        android:textColor="#1afb1e"
+        android:textStyle="bold|italic"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:contextClickable="true"
+        android:clickable="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:id="@+id/mess"
+        android:layout_toEndOf="@+id/calc"
+        android:enabled="true"
+        android:focusable="true"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:textColor="#0cf614"
+        android:textStyle="bold|italic"
+        android:layout_alignTop="@+id/call" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/chrome"
+        android:layout_below="@+id/call"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
